@@ -87,4 +87,8 @@ public class comScore {
     public static void enableAutoUpdate(int interval, boolean foregroundOnly) {
         peer.enableAutoUpdate(interval, foregroundOnly);
     }
+    
+    public static void view(String key, String value) {
+        peer.view(key, value);
+    }
 }

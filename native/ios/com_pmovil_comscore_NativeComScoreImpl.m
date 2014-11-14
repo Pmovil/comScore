@@ -57,6 +57,12 @@
     });
 }
 
+-(void)view:(NSString*)param param1:(NSString*)param1{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [CSComScore viewWithLabels:[NSDictionary dictionaryWithObjectsAndKeys:param, param1,nil]];
+    });
+}
+
 -(BOOL)isSupported{
     return YES;
 }

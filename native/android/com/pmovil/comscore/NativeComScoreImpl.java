@@ -2,6 +2,7 @@ package com.pmovil.comscore;
 
 import android.app.Activity;
 import com.codename1.impl.android.CodenameOneActivity;
+import java.util.HashMap;
 
 public class NativeComScoreImpl {
     private static CodenameOneActivity app;
@@ -75,6 +76,16 @@ public class NativeComScoreImpl {
         app.runOnUiThread(new Runnable() {
             public void run() {
                 com.comscore.analytics.comScore.enableAutoUpdate(interval, foregroundOnly);
+            }
+        });
+    }
+
+    public void view(String param, String param1) {
+        final HashMap hash = new HashMap();
+        hash.put(param, param1);
+        app.runOnUiThread(new Runnable() {
+            public void run() {
+                com.comscore.analytics.comScore.view(hash);
             }
         });
     }
