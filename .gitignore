@@ -1,0 +1,8 @@
+/native/android/comscore.jar
+/native/ios/libcomScore.a
+/native/ios/CS*
+/nbproject/private/
+/build
+/dist
+/docs
+/lib/CodenameOne_SRC
