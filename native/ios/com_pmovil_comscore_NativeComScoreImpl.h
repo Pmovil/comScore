@@ -13,6 +13,7 @@
 -(void)onUxInactive;
 -(void)enableAutoUpdate:(int)param param1:(BOOL)param1;
 -(void)view:(NSString*)param param1:(NSString*)param1;
+-(void)setLabel:(NSString*)param param1:(NSString*)param1;
 -(BOOL)isSupported;
 
 @end

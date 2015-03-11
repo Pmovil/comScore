@@ -90,6 +90,14 @@ public class NativeComScoreImpl {
         });
     }
 
+    public void setLabel(final String param, final String param1) {
+        app.runOnUiThread(new Runnable() {
+            public void run() {
+                com.comscore.analytics.comScore.setLabel(param, param1);
+            }
+        });
+    }
+    
     public boolean isSupported() {
         return true;
     }

@@ -91,4 +91,8 @@ public class comScore {
     public static void view(String key, String value) {
         peer.view(key, value);
     }
+    
+    public static void setLabel(String key, String value) {
+        peer.setLabel(key, value);
+    }
 }

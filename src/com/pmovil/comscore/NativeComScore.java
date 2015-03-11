@@ -41,4 +41,5 @@ public interface NativeComScore extends NativeInterface {
     public void onUxInactive();
     public void enableAutoUpdate(int interval, boolean foregroundOnly);
     public void view(String key, String value);
+    public void setLabel(String key, String value);
 }
